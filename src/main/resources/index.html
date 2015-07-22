@@ -1,0 +1,242 @@
+<!-- Author: Michael Milstead / Mode87.com
+	 for Untame.net
+	 Twitter Bootstrap Tutorial
+	 Parallax Demo, 2013
+-->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap Parallax Tutorial</title>
+    <meta name="description" content="Twitter Bootstrap Parallax Tutorial with HTML5 / CSS3 / JavaScript">
+    <meta name="author" content="Untame.net">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery-1.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
+
+    <style type="text/css">
+        #intro {
+            background: url(images/intro.png) 50% 0 fixed;
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            padding: 50px 0;
+        }
+        #home {
+            background: url(images/baozi.jpg) 50% 0 fixed;
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            padding: 200px 0;
+        }
+        #middle {
+            background: url(images/intro.png) 50% 0 fixed;
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            padding: 100px 0;
+        }
+        #about {
+            background: url(images/about.png) 50% 0 fixed;
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            padding: 100px 0;
+            color: #fff;
+        }
+        #bottom {
+            background: url(images/lobby.jpg) 50% 0 fixed;
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            padding: 200px 0;
+        }
+
+        /* Non-essential demo stuff */
+        .hero-unit {
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .media-object { width: 64px; height: 64px; padding-bottom: 30px }
+    </style>
+
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">Shanghai Best</a>
+            <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservation</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Section #1 -->
+<section id="intro" data-speed="6" data-type="background">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span4 text-center">
+                <img src="images/logo.jpg">
+            </div>
+            <div class="span8 text-center">
+                <img src="images/logo1.jpg">
+            </div>
+        </div>
+        <div class="hero-unit">
+            <!--<h2>Shanghai Best Restaurant</h2>-->
+            <img src="images/shanghai.png">
+            <p>Shanghai Best is one of the finest Soup Dumpling and Dim Sum restaurants in Jersey City. We are not only offers amazing Chinese food but also serve them in a pleasant atmosphere that'll have you coming back for more. The popular Xiao Long Bao also known as Soup Dumpling originated from Nanxiang, China, and it is favored among pork and crab lovers. Our talented, experienced chefs create authentic Chinese dishes using fresh ingredients and traditional Chinese recipes. Exotic sauces and flavors intermingle on your plate, and the hot, tangy aromas waft up to meet your nose, creating an exciting taste journey that you can experience only in our restaurant. </p>
+        </div>
+    </div>
+</section>
+
+<!-- Section #2 -->
+<section id="home" data-speed="4" data-type="background">
+    <div class="container">
+        <div class="row-fluid">
+            <!--<div class="span4 well">-->
+                <!--<h2>Heading</h2>-->
+                <!--<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>-->
+                <!--<p><a class="btn btn-success" href="#">View details &raquo;</a></p>-->
+            <!--</div>&lt;!&ndash; /.span4 &ndash;&gt;-->
+            <!--<div class="span4 well">-->
+                <!--<h2>Heading</h2>-->
+                <!--<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>-->
+                <!--<p><a class="btn btn-success" href="#">View details &raquo;</a></p>-->
+            <!--</div>&lt;!&ndash; /.span4 &ndash;&gt;-->
+            <!--<div class="span4 well">-->
+                <!--<h2>Heading</h2>-->
+                <!--<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>-->
+                <!--<p><a class="btn btn-success" href="#">View details &raquo;</a></p>-->
+            <!--</div>&lt;!&ndash; /.span4 &ndash;&gt;-->
+        </div>
+    </div>
+</section>
+
+<section id="middle" data-speed="6" data-type="background">
+    <div class="container">
+        <div class="hero-unit">
+            <img src="images/xiaolongbao_title.png">
+            <img src="images/xiaolongbao.png">
+        </div>
+    </div>
+</section>
+
+<!-- Section #2 -->
+<section id="bottom" data-speed="4" data-type="background">
+    <div class="container">
+        <div class="row-fluid">
+            <!--<div class="span4 well">-->
+            <!--<h2>Heading</h2>-->
+            <!--<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>-->
+            <!--<p><a class="btn btn-success" href="#">View details &raquo;</a></p>-->
+            <!--</div>&lt;!&ndash; /.span4 &ndash;&gt;-->
+            <!--<div class="span4 well">-->
+            <!--<h2>Heading</h2>-->
+            <!--<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>-->
+            <!--<p><a class="btn btn-success" href="#">View details &raquo;</a></p>-->
+            <!--</div>&lt;!&ndash; /.span4 &ndash;&gt;-->
+            <!--<div class="span4 well">-->
+            <!--<h2>Heading</h2>-->
+            <!--<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.</p>-->
+            <!--<p><a class="btn btn-success" href="#">View details &raquo;</a></p>-->
+            <!--</div>&lt;!&ndash; /.span4 &ndash;&gt;-->
+        </div>
+    </div>
+</section>
+
+<!-- Section #3 -->
+<section id="about" data-speed="2" data-type="background">
+    <div class="container">
+        <div class="page-header">
+            <h1>Final Section Headline <small>Some subtext goes here...</small></h1>
+        </div>
+        <div class="row-fluid">
+            <div class="span4">
+                <h2>Peking duck</h2>
+                <p>Peking Duck is a famous duck dish from Beijing that has been prepared since the imperial era. The meat is prized for its thin, crisp skin, with authentic versions of the dish serving mostly the skin and little meat, sliced in front of the diners by the cook.</p>
+                <p><a class="btn btn-success">View details &raquo;</a></p>
+            </div><!-- /.span4 -->
+            <div class="span4">
+                <h2>Service</h2>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="images/check.png">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Address</h4>
+                        95 Montgomery St. Jersey City, NJ 07302
+                    </div>
+                </div>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="images/check.png">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Telephone: </h4>
+                        201-333-6868 | 201-333-666
+                    </div>
+                </div>
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="images/check.png">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Business Hours: </h4>
+                        Open 7 days a week from 11:00 am to 10:00pm
+                    </div>
+                </div>
+            </div><!-- /.span4 -->
+            <div class="span4">
+                <h2>Log In</h2>
+                <form class="form">
+                    <div class="control-group">
+                        <label class="control-label" for="inputEmail">Email</label>
+                        <div class="controls">
+                            <input type="text" id="inputEmail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="inputPassword">Password</label>
+                        <div class="controls">
+                            <input type="password" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <label class="checkbox">
+                                <input type="checkbox"> Remember me <br><br>
+                            </label>
+                            <button type="submit" class="btn btn-success">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- /.span4 -->
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+
+</html>
