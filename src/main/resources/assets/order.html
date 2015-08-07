@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="AngularStore">
+<head>
+    <title>Shopping Cart with AngularJS</title>
+
+    <!-- jQuery, Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" type="text/css"/>
+    <!--<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js" type="text/javascript" ></script>-->
+
+    <!-- Stripe -->
+    <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.61.0-2013.06.06/jquery.blockUI.min.js"></script>
+
+    <!-- AngularStore app -->
+    <script src="js/order/product.js" type="text/javascript"></script>
+    <script src="js/order/store.js" type="text/javascript"></script>
+    <script src="js/order/shoppingCart.js" type="text/javascript"></script>
+    <script src="js/order/app.js" type="text/javascript"></script>
+    <script src="js/order/controller.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/library/jquery-1.6.1.min.js"></script>
+    <script src="js/library/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">Shanghai Best</a>
+            <ul class="nav">
+                <li class="active"><a href="/assets/index.html">Home</a></li>
+                <li><a href="/assets/order.html">Online Order</a></li>
+                <li><a href="#">Reservation</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section id="menu-home" data-speed="4" data-type="background">
+</section>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div ng-view></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
